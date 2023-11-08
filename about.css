@@ -1,0 +1,99 @@
+
+body{
+    background-color: white;
+    overflow: hidden;
+}
+
+.about-div{
+    font-family: sans-serif;
+    margin: 4%;
+    height: 610px;
+    background-color: #D9D9D9;
+    background-size: cover;
+    text-align: left;
+}
+
+.para-div{
+    background-color: white;
+    margin: 2% 4% 4% 4%;
+    text-align: left;
+    line-height: 200%;
+    font-size: 1.2em;
+    height: 450px;
+    overflow: auto;
+    padding-left: 20px;
+}
+
+.para-div p{
+    overflow: hidden;
+    scrollbar-gutter: stable both-edges; 
+}
+
+.about-head{
+    padding-left: 4%;
+    padding-top: 2%;
+    font-size: 3em;
+}
+
+.languages-used{
+    padding-left: 4%;
+}
+
+.about-back-button{
+    width: 10%;
+    height: 7%;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border: 0px;
+    font-weight: bold;
+    position: fixed;
+    left: 79%;
+    bottom: 20%;
+}
+
+.para-headings{
+    font-size: 1.3em;
+}
+
+@media all and (max-width: 400px){
+    .about-head{
+        padding-left: 4%;
+        padding-top: 3%;
+        font-size: 3em;
+    }
+    .about-div{
+        font-family: sans-serif;
+        margin: 4%;
+        height: 585px;
+        background-color: #D9D9D9;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .para-div{
+        background-color: white;
+        margin: 2% 4% 4% 4%;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+    .para-headings{
+        font-size: 1.1em;
+    }
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 68%;
+        bottom: 10%;
+    }
+}
+

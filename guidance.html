@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIDANCE</title>
+    <link rel="stylesheet" href="guidance.css">
+</head>
+<body class="body">
+    <div class="instruction-div">
+        <h2 class="instruction-head">INSTRUCTIONS</h2>
+        <ol class="instructions-para">
+            <li>Start the Game: Once you click the START GAME button the game will start.</li>
+            <li>Jump Over Obstacles: As the game starts, your dinosaur will begin to run automatically from left to right.
+                You need to press the Space bar key to make the dinosaur jump over obstacles like cactus.</li>
+            <li>Avoid Collision: The goal is to avoid colliding with the obstacles. If you hit an obstacle, the game is over, and your score is displayed.</li>
+            <li>Collect Points: Your score is determined by how far you can run without hitting an obstacle. The game doesn't have an end, but it keeps getting faster and more challenging the longer you play.</li>
+            <li>Challenge Yourself: The game can be quite addictive, and you can challenge yourself to beat your high score.</li>
+        </ol>
+        <button class="instruction-back-button">BACK</button>
+        <script>
+            var instructionBackButton = document.querySelector(".instruction-back-button").addEventListener('click',()=>{
+                window.location.href = "index.html";
+            })
+        </script>
+    </div>
+</body>
+</html>

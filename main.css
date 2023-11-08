@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.username-page{
+    background-image: url("Assets/Third\ screen\ \(2\).png");
+    background-size: cover;
+    height: 742px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-popup{
+    background-color: rgb(69, 68, 68);
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 10%;
+    color: white;
+}
+
+.username-popup{
+    font-size: 2em;
+}
+
+#name{
+    margin-top: 10%;
+}
+#username{
+    margin-top: 15px;
+}
+
+.username-popup input{
+    height: 40px;
+    width: 400px;
+    padding-left: 20px;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.enter-button{
+    color: rgb(0, 0, 0);
+    font-size: .7em;
+    width: 25%;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 5%;
+    border: 0px;
+}
+
+.username-page{
+    display: none;
+}
+
+.dinohead{
+    display: none;
+    margin-top: 3%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.score{
+    margin-right: 10%;
+    margin-top: 6%;
+    font-size: 2em;
+    display: flex;
+}
+.scrtext{
+    display: flex;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+.scorenumber{
+    margin-left: 1%;
+}
+
+
+@keyframes sun{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.sun{
+    margin-left: 6%;
+    margin-top: 3%;
+    transform: rotate(360deg);
+    animation: sun 2s linear infinite;
+}
+
+.clouds{
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+
+
+.dino-image{
+    width: 175px;
+    margin-left: 10%;
+    margin-top: 5.5%;
+    position: relative;
+    top: 30px;
+}
+
+@keyframes jumb{
+    0%{
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px); 
+      }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.obstacles{
+    display: flex;
+}
+
+.thingsontheground{
+    display: flex;
+}
+
+.obstacles{
+    padding-top: 100px;
+    width: fit-content;
+}
+
+.dino img{
+    animation: none;
+}
+
+.groundline{
+    position: relative;
+    bottom: 6px;
+}
+
+.grounddots{
+    margin-top: 1%;
+}
+
+@keyframes righttoleft{
+    0% {
+        transform: translateX(100%);
+      }
+    50%{
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }   
+}
+.grounddots{
+    animation: righttoleft 2s infinite;
+}
+
+.clouds{
+    animation: righttoleft 20s infinite;
+}
+
+
+
+@media all and (max-width : 400px){
+    .dino-image{
+        width: 90px;
+        margin-left: 10%;
+        margin-top: 16.5%;
+        position: relative;
+        top: 30px;
+    }
+    .dinohead{
+        display: block;
+    }
+    .clouds{
+        margin-top: 10%;
+        width: 150%;
+    }
+    .sun{
+        margin-top: 40%;
+        width: 100px;
+    }
+    .score{
+        margin-right: 5%;
+        margin-top: 20%;
+        font-size: 1em;
+        display: flex;
+    }
+    .scrtext{
+        display: flex;
+        margin-right: 7px;
+        height: fit-content;
+    }
+}
