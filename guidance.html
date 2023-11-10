@@ -22,6 +22,12 @@
             var instructionBackButton = document.querySelector(".instruction-back-button").addEventListener('click',()=>{
                 window.location.href = "index.html";
             })
+            window.addEventListener("load", () => {
+                const bgm = new Audio("Assets/BGM.mp3");
+                bgm.play();
+                bgm.loop = true;
+
+            })
         </script>
     </div>
 </body>

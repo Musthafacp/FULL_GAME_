@@ -5,24 +5,25 @@ var gamepage = document.querySelector(".game")
 var velocity = 30;
 
 var score = document.getElementById("scorenumber")
-const bgm = new Audio("Assets/Horserun.mp3")
+
 
 
 const randomNumber = Math.floor(Math.random() * (530 - 460 + 1)) + 460;
 console.log(randomNumber);
 
-
-// SCORE
+// GETTING INPUTED NAME AND USER NAME
 
 var Name = sessionStorage.getItem("name");
 if (Name != null) {
     usernamePopupPage.style.display = "none";
     gamepage.style.display = "block"
-}else{
+} else {
     gamepage.style.display = "none"
     usernamePopupPage.style.display = "block"
 }
 
+
+// SCORE
 
 var counter = 0;
 setInterval(() => {
@@ -36,11 +37,9 @@ setInterval(() => {
 
 enterButton.addEventListener('click', () => {
     var storedName = sessionStorage.getItem("name");
-    if (storedName != null){
+    if (storedName != null) {
         usernamePopupPage.style.display = "none";
         gamepage.style.display = "block";
-        bgm.play();
-        bgm.loop = true;
     } else {
         location.reload();
         var nameInput = document.getElementById("name").value;
@@ -52,8 +51,6 @@ enterButton.addEventListener('click', () => {
 
             usernamePopupPage.style.display = "none";
             gamepage.style.display = "block";
-            bgm.play();
-            bgm.loop = true;
         } else {
             if (usernameInput == "" && nameInput != "") {
                 alert("Give your Username, Maahn");
@@ -65,6 +62,13 @@ enterButton.addEventListener('click', () => {
         }
     }
 });
+
+window.addEventListener("load", () => {
+    const bgm = new Audio("Assets/BGM.mp3");
+    bgm.play();
+    bgm.loop = true;
+
+})
 
 
 
@@ -103,11 +107,11 @@ function checkCollision() {
             gameOver();
         }
     });
-    
+
 }
 
 
-if(score%10 == 0){
+if (score % 10 == 0) {
     velocity += 10;
 }
 

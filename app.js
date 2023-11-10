@@ -8,4 +8,9 @@ startGame.addEventListener('click',() => {
 })
 
 
+window.addEventListener("click", () => {
+    const bgm = new Audio("Assets/BGM.mp3");
+    bgm.play();
+    bgm.loop = true;
+})
 

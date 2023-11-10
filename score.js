@@ -36,10 +36,17 @@ highScore.innerText = highScorenumber
 //RANDOM PHRASES 
 
 const arrayPhrases = ["DONT GIVE UP", "Persistence leads to success.","You are stronger than you think"]
+
 let message = document.getElementById("messages")
 const randomPhrase =arrayPhrases[Math.floor(Math.random() * arrayPhrases.length)];
 message.innerText = randomPhrase
 
+window.addEventListener("click", () => {
+    const bgm = new Audio("Assets/BGM.mp3");
+    bgm.play();
+    bgm.loop = true;
+
+})
 
 
 
