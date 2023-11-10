@@ -1,8 +1,11 @@
 var startGame = document.getElementById("start-game")
-var usernamepopupPage = document.querySelector(".username-page")
+var usernamePopupPage = document.querySelector(".username-page")
+var gamepage = document.querySelector(".game")
 
 startGame.addEventListener('click',() => {
-    usernamepopupPage.style.display = "block";
+    console.log("clicked")
     window.location.href = "main.html";
 })
+
+
 

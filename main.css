@@ -12,9 +12,8 @@ body{
     background-image: url("Assets/Third\ screen\ \(2\).png");
     background-size: cover;
     height: 742px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    padding-left: 23%;
+    padding-top: 5%;
 }
 
 .username-popup{
@@ -48,16 +47,19 @@ body{
 .enter-button{
     color: rgb(0, 0, 0);
     font-size: .7em;
-    width: 25%;
+    width: 35%;
     border-radius: 5px;
     height: 40px;
     font-weight: bold;
     margin-top: 5%;
     border: 0px;
 }
-
-.username-page{
-    display: none;
+.enter-button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgb(92, 87, 87);
+    transition: background-color 0.3s, color 0.3s , box-shadow 0.3s;
 }
 
 .dinohead{
@@ -110,44 +112,33 @@ nav{
     margin-top: 2%;
 }
 
-
-
 .dino-image{
-    width: 175px;
+    width: 160px;
+    height: 135px;
+    background-size: contain;
     margin-left: 10%;
-    margin-top: 5.5%;
+    margin-top: 8.5%;
+    background-image: url("https://geekanant.gallerycdn.vsassets.io/extensions/geekanant/chrome-dinosaur-game/0.0.1/1638086697139/Microsoft.VisualStudio.Services.Icons.Default");
     position: relative;
-    top: 30px;
+    top: 10px;
+    transition: transform 0.8s; 
 }
 
-@keyframes jumb{
-    0%{
-      transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-100px); 
-      }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.obstacles{
-    display: flex;
-}
+.jump {
+    transform: translateY(-100px); 
+  }
 
 .thingsontheground{
     display: flex;
 }
 
-.obstacles{
-    padding-top: 100px;
+.obstacles {
+    height: fit-content;
     width: fit-content;
-}
-
-.dino img{
-    animation: none;
-}
+    position: absolute;
+    bottom: 20%;
+    top: 75%;
+  }
 
 .groundline{
     position: relative;
@@ -170,13 +161,12 @@ nav{
     }   
 }
 .grounddots{
-    animation: righttoleft 2s infinite;
+    animation: righttoleft 4s infinite linear;
 }
 
 .clouds{
-    animation: righttoleft 20s infinite;
+    animation: righttoleft 20s infinite linear;
 }
-
 
 
 @media all and (max-width : 400px){

@@ -56,11 +56,9 @@ nav a:hover{
 }
 
 .start-game:hover{
-    /* background-color: rgb(0, 0, 0); */
-    /* color: white; */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s , box-shadow 0.3s;
-    box-shadow: #000000 2px 3px 1px;
+    box-shadow: #000000 4px 3px 2px;
 }
 
 .big-dino{
@@ -90,4 +88,11 @@ nav a:hover{
     .big-dino{
         margin-top: 25%;
     }
+}
+
+@media all and (max-width:450px){
+    .main-head{
+        margin-top: 20.5%;
+    }
+
 }

@@ -51,12 +51,18 @@ body{
     left: 79%;
     bottom: 20%;
 }
+.about-back-button:hover{
+    background-color: rgb(192, 191, 191);
+    box-shadow: 2px 3px 2px black;
+    color: black;
+    transition: background-color 0.3s, color 0.3s , box-shadow 0.3s;
+}
 
 .para-headings{
     font-size: 1.3em;
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 376px){
     .about-head{
         padding-left: 4%;
         padding-top: 3%;
@@ -97,3 +103,29 @@ body{
     }
 }
 
+@media all and (max-width: 321px){
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        width: 80px;
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 63%;
+        bottom: 10%;
+    }
+    .para-div{
+        background-color: white;
+        margin: 2% 4% 4% 4%;
+        /* width: 700px; */
+        height: 400px;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+}

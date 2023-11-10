@@ -1,14 +1,19 @@
 body{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .gameover-message{
     background-color: #D9D9D9;
     width: max-content;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 4%;
-    margin-top: 3%;
-    margin-left: 15%;
+    margin-top: 4%;
 }
 
 .textsinsidethepopup{
@@ -17,7 +22,6 @@ body{
 }
 
 .scores{
-    margin-left: 34%;
     line-height: 140%;
     background-color: black;
     width: max-content;
@@ -30,12 +34,12 @@ body{
 #play-again-button{
     color: rgb(0, 0, 0);
     font-size: 1.2em;
-    width: 20%;
     border-radius: 5px;
     height: 40px;
     font-weight: bold;
     margin-top: 5%;
     border: 0px;
+    width: 150px;
 }
 
 #play-again-button:hover{
@@ -64,7 +68,6 @@ body{
     }
     .scores{
         margin-top: 15%;
-        margin-left: 25%;
         line-height: 140%;
         background-color: black;
         width: max-content;
@@ -83,5 +86,19 @@ body{
         font-weight: bold;
         margin-top: 15%;
         border: 0px;
+    }
+}
+
+@media all and (max-width : 440px){
+    .gameover-message{
+        background-color: #D9D9D9;
+        width: max-content;
+        text-align: center;
+        padding: 3%;
+        margin-top: 20%;
+        margin-left: 0%;
+    }
+    .textsinsidethepopup{
+        font-size: 1.7em;
     }
 }
